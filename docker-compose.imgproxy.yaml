@@ -8,12 +8,11 @@ services:
         labels:
             com.ddev.site-name: ${DDEV_SITENAME}
             com.ddev.approot: $DDEV_APPROOT
-        networks: [default, ddev_default]
         environment:
             VIRTUAL_HOST: $DDEV_HOSTNAME
             HTTPS_EXPOSE: 8081:8080
             HTTP_EXPOSE: 8080:8080
-            IMGPROXY_BASE_URL: http://web:80
+            IMGPROXY_BASE_URL: http://web:80/
             IMGPROXY_ALLOW_ORIGIN: "*"
         volumes:
             - ".:/mnt/ddev_config"
