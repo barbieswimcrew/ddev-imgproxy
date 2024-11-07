@@ -24,7 +24,7 @@ ddev get barbieswimcrew/ddev-imgproxy && ddev restart
 ```
 
 
-Navigating https://localhost:8081 should display the imgproxy default landingpage.
+Navigating to your DDEV project's hostname:8081 (for example https://imgproxy.ddev.site:8081) should display the imgproxy default landingpage.
 
 ## Explanation
 
