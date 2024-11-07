@@ -33,7 +33,7 @@ This recipe for [DDEV](https://ddev.readthedocs.io) installs a [.ddev/docker-com
 As soon as imgproxy is running successfully, requests can be sent to imgproxy to convert images from a source format to the desired target format. A prominent scenario for this is the generation of thumbnails:
 
 ```
-https://localhost:8081/insecure/size:360:240/plain//web/path/to/image.png@avif
+ddev launch :8081/insecure/size:360:240/plain//web/path/to/image.png@avif
 ```
 
 This request would convert/return the file `web/path/to/image.png` into an AVIF thumbnail with the desired dimensions 360x240px.
