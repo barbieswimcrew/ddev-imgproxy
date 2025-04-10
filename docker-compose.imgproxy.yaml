@@ -2,7 +2,7 @@
 services:
     imgproxy:
         container_name: ddev-${DDEV_SITENAME}-imgproxy
-        image: darthsim/imgproxy:latest
+        image: ghcr.io/imgproxy/imgproxy:latest
         restart: "no"
         # These labels ensure this service is discoverable by ddev.
         labels:
